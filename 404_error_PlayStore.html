@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The7Arts | TechTitans | 4004 Error</title>
+    <link rel="website icon" type="png" href="V2.png">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">The7Arts</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a class="homenav">Go Home Steve</a></li>
+                <span>|</span>
+                <li><a>...</a></li>
+                <span>|</span>
+                <li><a>Why would you like to download our app?</a></li>
+                <span>|</span>
+                <li><a>You have to buy</a></li>
+                <span>|</span>
+                <li><a>Don't Contact Us</a></li>
+                <span>|</span>
+            </ul>
+        </div>
+            <ion-icons name="menu-outline" class="menuToggle">o</ion-icons>
+        </div>
+    </header>
+    <section id="Home" class="home">
+        <h1>Unfortunatly, we will not upload the app to Play Stor nor the AppStore</h1>
+        <p>Go Home Steve! Or explore this website full of weird things... didn't say anything!</p>
+        <form action="">
+            <input type="text" name="" id="" class="inputtext" placeholder="DOn't tYpE notHinG!">
+            <button type="submit">Go!</button></form>
+        
+    </section>
+    <div class="Key1">
+        <h1>Congratulation!🎉</h1>
+        <p>Congratulation, you found the first key, it will help you inside our app!<br><span>Code : TheBestDev</span></p>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        let inputtext = document.querySelector('.inputtext');
+        let homenav = document.querySelector('.homenav');
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('open');
+        }
+        navigation.onclick = function(){
+            header.classList.remove('open');
+        }
+        navigation.onclick=function(){
+            header.classList.toggle('keyFound');
+        }
+        
+    </script>
+    <footer>
+        <p>Copyright © <span>TechTitans</span> 2024 || All Rights Reserved</p>
+    </footer>
+</body>
+</html>

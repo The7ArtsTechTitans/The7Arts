@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The7Arts | TechTitans</title>
+    <link rel="website icon" type="png" href="V2.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="script.js">
+</head>
+<body class="tolight">
+    <header>
+        <a href="#" class="logo">The7Arts</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#Downloads">Downloads</a></li>
+                <li><a href="#Store">Store</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+            <ul class="navigation2">
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="signup.htnl">Sign Up</a></li>
+            </ul>
+        </div>
+            <ion-icons name="menu-outline" class="menuToggle">o</ion-icons>
+        </div>
+    </header>
+    <section id="Home" class="home">
+        <h1>Welcome to<br><span>The7Arts</span></h1>
+        <p>The7Arts project is created by TechTitans Team, looking at different arts like <span>Music</span>, or <span>Sculpture</span> or even <span>Drawing</span> etc...</p>
+        <div class="button_home">
+            <button type="button"><span></span><a href="store.html">The Store</a></button>
+            <button type="button"><span></span><a href="#info">Information project</a></button>
+            <button type="button"><span></span><a href="#Downloads">Take me to Downloads</a></button>
+        </div>
+    </section>
+    <section id="info" class="info">
+        <h1>Info about <span>The7Arts</span></h1>
+        <p>The7Arts is an application that virtualise an entire city into VR headset, where you can enjoy and look at the different arts. Each art had a room, contain a floating bar with some helpful information about that art, and some free examples. If you need the premium examples, don't worry, we got you there. You can make an account, then buy a ticket from our store online to do multiple premium things.
+            First of all, you download our application in your device, then you connect it into a VR Headset (Preferable if it was a Meta Oculus Headset). Once you complete all these things, you'll get into our login page, wich is in this website, if you want to connect, do it, if you dont, just skip we don't mind. Secondly, you will find yourself in a room that contain 8 door, 7 of them are the 7 Arts, and one of them is an easter egg.
+        </p>
+    </section>
+    <section id="Downloads" class="download">
+        <h1>Download our project</h1>
+        <p>The7Arts is an application, choose your platform, wait to download, install it and enjoy!</p>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <ion-icons name="windows-outline"></ion-icons>
+                </div>
+                <div class="infoabt">
+                    <h3>Windows</h3>
+                    <p>Choose one of those configuration</p>
+                    <button type="button"><a href="https://www.google.com">Download the 64bit file.</a></button>
+                    <p>or</p>
+                    <button type="button"><a href="https://www.google.com">Download the 32bit file.</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <ion-icons name="linux-outline"></ion-icons>
+                </div>
+                <div class="infoabt">
+                    <h3>Linux</h3>
+                    <p>Choose one of those configuration</p>
+                    <button type="button"><a href="https://www.google.com">Download the 64bit file.</a></button>
+                    <p>or</p>
+                    <button type="button"><a href="https://www.google.com">Download the 32bit file.</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <ion-icons name="android-outline"></ion-icons>
+                </div>
+                <div class="infoabt">
+                    <h3>Android</h3>
+                    <p>Choose one of those configuration</p>
+                    <button type="button"><a href="https://www.google.com">Download the .apk file.</a></button>
+                    <p>or</p>
+                    <button type="button"><a href="404_error_PlayStore.html">Go to Play Store</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <ion-icons name="apple-outline"></ion-icons>
+                </div>
+                <div class="infoabt">
+                    <h3>iPhone or MacOs</h3>
+                    <p>You don't have any configuration >:)</p>
+                    <button type="button"><a href="404_error_PlayStore.html">Go to App Store</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactus" class="contactus">
+        <div class="main-text">
+            <span>Questions? Issues?</span>
+            <h2>Contact Us!</h2>
+        </div>
+        <form action="#">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <div class="Light_Dark">
+        <a class="light">Light/Dark<a>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        let light = document.querySelector('.light');
+        let body = document.querySelector('body');
+
+        menuToggle.onclick = function(){
+            header.classList.toggle('open');
+        }
+        navigation.onclick = function(){
+            header.classList.remove('open');
+        }
+        light.onclick=function(){
+            body.classList.toggle('tolight');
+        }
+    </script>
+    <footer>
+        <p>Copyright © <span>TechTitans</span> 2024 || All Rights Reserved</p>
+    </footer>
+</body>
+</html>
